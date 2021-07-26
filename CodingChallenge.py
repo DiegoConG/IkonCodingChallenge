@@ -33,8 +33,7 @@ def calculateOptimal():
         writeOptimal(optimalProcesses)
 
 def writeOptimal(procs):
-    print("Procs: ")
-    print(procs)
+
     with open(os.getcwd()+'//challenge.out', 'a') as out:
         out.write(str(procs).strip("[]") + '\n')
 
